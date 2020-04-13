@@ -1,7 +1,40 @@
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 500px;
+  padding: 11vh 5vh 7vh;
+  text-align: center;
+  z-index: 999999999;
+  border-radius: 15px  20px 10px 40px;
+  -webkit-box-shadow: 0 15px 35px rgba(90, 37, 131, 0.35);
+          box-shadow: 0 15px 35px rgba(90, 37, 131, 0.35);
+}
 
-.header {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e7e9), color-stop(99%, #e3eeff), to(#e3eeff));
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+.login-box .avatar {
+  background-color: white;
+  padding: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 15px 30px rgba(90, 37, 131, 0.35);
+          box-shadow: 0 15px 30px rgba(90, 37, 131, 0.35);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login-box img {
+  display: inline-block;
+  width: 15vh;
+  height: 15vh;
+}
+
+.login-box h2 {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

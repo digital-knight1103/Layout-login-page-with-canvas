@@ -11,13 +11,51 @@
   <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
 <body>
-  <body class="demo-2">
-		<main>
+  <body class="bcg-swirl">
 
-			<div class="content content--canvas">
-				<h2 class="content__title">Swirl</h2>
-			</div>
-		</main>
+    <h2 class="content-title">Log in space</h2>
+    <div class="login-box">
+      <div class="avatar">
+        <img src="astronaut.svg" alt="avatar astronaut">
+      </div>
+      <h2>Welcome</h2>
+
+      <p>Sing in to your spaceship</p>
+
+      <form action="/" class="form"> 
+        <div class="form-input-box">
+          <label for="login">Login</label>
+          <input type="text" name="login" id="login">
+        </div>
+        <div class="form-input-box">
+          <label for="password">Password</label>
+          <input type="password" name="password id="password">
+        </div>
+      </form>
+
+      <div class="form-options">
+        <div>
+          <a href="/">Forget passwor?</a>
+        </div>
+        <div>
+          don't you have an account? <a href="/">SIGN UP</a>
+        </div>
+
+        <button type="submit" class="button">SIGN IN</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+   
+		<main>
+			<div class="content--canvas">
+    </main>
+
+    
+    
+
 		<script src="js/noise.min.js"></script>
 		<script src="js/util.js"></script>
 		<script src="js/swirl.js"></script>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Ailerons';
+  src: url("/Ailerons-Typeface.otf");
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
 }
@@ -182,15 +187,14 @@ table {
 }
 
 body {
-  font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Bebas", "Times New Roman", sans-serif;
   min-height: 100vh;
-  color: #57585c;
-  color: var(--color-text);
+  color: #2a2a2c;
   background-color: #000;
   overflow: hidden;
 }
 
-.demo-2 {
+.bcg-swirl {
   --color-text: #ff53ff;
   --color-link: #3c48fa;
   --color-link-hover: #fff;
@@ -256,6 +260,7 @@ body {
 a {
   text-decoration: none;
   color: var(--color-link);
+  color: yellow;
   outline: none;
 }
 
@@ -284,13 +289,16 @@ a:focus {
           align-items: center;
 }
 
-.content__title {
+.content-title {
+  font-family: "Ailerons";
+  text-shadow: 3px 4px 4px rgba(125, 51, 131, 0.84), 3px 4px 4px rgba(90, 37, 131, 0.84);
+  letter-spacing: -0.2em;
   position: absolute;
-  top: 50%;
+  top: 80px;
   left: 0;
   width: 100%;
   text-align: center;
-  margin: -5.5vw 0 0 0;
+  margin: 0 auto;
   z-index: 100;
   font-size: 10vw;
   color: var(--color-title);
