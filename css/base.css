@@ -181,14 +181,6 @@ table {
   font-size: 15px;
 }
 
-html, body {
-  background: #0b0812;
-}
-
-html {
-  background: #000;
-}
-
 body {
   font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
   min-height: 100vh;
@@ -198,40 +190,11 @@ body {
   overflow: hidden;
 }
 
-/* Color schemes */
-.demo-1 {
-  --color-text: #86eae7;
-  --color-link: #fff;
-  --color-link-hover: #86eae7;
-  --color-title: #fff;
-}
-
 .demo-2 {
   --color-text: #ff53ff;
   --color-link: #3c48fa;
   --color-link-hover: #fff;
   --color-title: #fff;
-}
-
-.demo-3 {
-  --color-text: #1ed97c;
-  --color-link: #fff;
-  --color-link-hover: #fff;
-  --color-title: #fff;
-}
-
-.demo-4 {
-  --color-text: #f0ea42;
-  --color-link: #ce8c32;
-  --color-link-hover: #fff;
-  --color-title: #ce8c32;
-}
-
-.demo-5 {
-  --color-text: #5c5ee7;
-  --color-link: #0ab5e4;
-  --color-link-hover: #fff;
-  --color-title: #0ab5e4;
 }
 
 /* Fade effect */
@@ -302,39 +265,6 @@ a:focus {
   outline: none;
 }
 
-.frame {
-  padding: 3rem 5vw;
-  text-align: center;
-  position: relative;
-  z-index: 1000;
-}
-
-.frame__title {
-  font-size: 1rem;
-  margin: 0 0 1rem;
-  font-weight: normal;
-}
-
-.frame__links {
-  display: inline;
-}
-
-.frame__github,
-.frame__links a:not(:last-child),
-.frame__demos a:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.frame__demos {
-  margin: 1rem 0;
-}
-
-.frame__demo--current,
-.frame__demo--current:hover {
-  text-decoration: underline;
-  color: var(--color-link);
-}
-
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,66 +300,6 @@ a:focus {
 @media screen and (min-width: 53em) {
   .message {
     display: none;
-  }
-  .frame {
-    position: fixed;
-    text-align: left;
-    z-index: 10000;
-    top: 0;
-    left: 0;
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    width: 100%;
-    max-width: none;
-    height: 100vh;
-    padding: 2rem 2.25rem;
-    pointer-events: none;
-    -ms-grid-columns: 25% 50% 25%;
-        grid-template-columns: 25% 50% 25%;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 'title title ... ' '... ... ...' 'github demos links';
-  }
-  .frame__title-wrap {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: title;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .frame__title {
-    margin: 0;
-  }
-  .frame__github {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: github;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    margin: 0;
-  }
-  .frame__demos {
-    margin: 0;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: demos;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  .frame__links {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    grid-area: links;
-    padding: 0;
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-  .frame a {
-    pointer-events: auto;
   }
   .content {
     height: 100vh;
