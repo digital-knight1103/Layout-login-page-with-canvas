@@ -9,6 +9,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	font-size: 15px;
 }
 
+html, body {
+  background: hsla(260,40%,5%,1);
+}
+
 html {
 	background: #000;
 }
@@ -22,6 +26,14 @@ body {
 	overflow: hidden;
 }
 
+/* Color schemes */
+.demo-1 {
+	--color-text: #86eae7;
+	--color-link: #fff;
+	--color-link-hover: #86eae7;
+	--color-title: #fff;
+}
+
 .demo-2 {
 	--color-text: #ff53ff;
 	--color-link: #3c48fa;
@@ -29,7 +41,36 @@ body {
 	--color-title: #fff;
 }
 
+.demo-3 {
+	--color-text: #1ed97c;
+	--color-link: #fff;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+}
 
+.demo-4 {
+	--color-text: #f0ea42;
+	--color-link: #ce8c32;
+	--color-link-hover: #fff;
+	--color-title: #ce8c32;
+}
+
+.demo-5 {
+	--color-text: #5c5ee7;
+	--color-link: #0ab5e4;
+	--color-link-hover: #fff;
+	--color-title: #0ab5e4;
+}
+
+/* Fade effect */
+.js body {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.js body.render {
+	opacity: 1;
+}
 
 /* Page Loader */
 .js .loading::before {
