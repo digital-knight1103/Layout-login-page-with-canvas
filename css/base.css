@@ -187,7 +187,7 @@ table {
 }
 
 body {
-  font-family: "Bebas", "Times New Roman", sans-serif;
+  font-family: "Arial", "Montserrat", sans-serif;
   min-height: 100vh;
   color: #2a2a2c;
   background-color: #000;
@@ -195,10 +195,20 @@ body {
 }
 
 .bcg-swirl {
-  --color-text: #ff53ff;
-  --color-link: #3c48fa;
-  --color-link-hover: #fff;
+  --color-link-hover: #8A18E1;
   --color-title: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link);
+  outline: none;
 }
 
 /* Fade effect */
@@ -257,19 +267,6 @@ body {
   }
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-link);
-  color: yellow;
-  outline: none;
-}
-
-a:hover,
-a:focus {
-  color: var(--color-link-hover);
-  outline: none;
-}
-
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,7 +291,7 @@ a:focus {
   text-shadow: 3px 4px 4px rgba(125, 51, 131, 0.84), 3px 4px 4px rgba(90, 37, 131, 0.84);
   letter-spacing: -0.2em;
   position: absolute;
-  top: 80px;
+  top: 30px;
   left: 0;
   width: 100%;
   text-align: center;
